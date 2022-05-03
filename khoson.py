@@ -308,7 +308,7 @@ if aa:
             with st.form(key='abcd'):
                 c1,c2,c3=st.columns(3)
                 with c1:
-                    nm=st.multiselect('Xuất cho chuyền sơn:',['Treo 1','Treo 2','Pallet 1','Pallet 2','Pallet 3','Pallet 5',"Metro",'Handpick','Nội bộ NM1','Nội bộ NM3','Nội bộ NM5","Sơn Mẫu"])
+                    nm=st.multiselect('Xuất cho chuyền sơn:',['Treo 1','Treo 2','Pallet 1','Pallet 2','Pallet 3','Pallet 5',"Metro",'Handpick','Nội bộ NM1','Nội bộ NM3','Nội bộ NM5',"Sơn Mẫu"])
                 with c2:
                     kh=st.multiselect("Loại đề xuất",['Kế hoạch','Phát sinh'])
                     lsx_id=lsx_df['LỆNH SX'].unique().tolist()
