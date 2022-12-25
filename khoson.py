@@ -392,6 +392,8 @@ if aa:
             tz = pytz.timezone('asia/ho_chi_minh')
             data['Ngày xuất kho']=datetime.now(tz).date().strftime("%m/%d/%Y")
             data["Giờ xuất kho"]=datetime.now(tz).strftime("%H:%M")
+            barcode=nm[0][0]+datetime.now(tz).strftime('%d%m%H%M%S')
+
             data=data.astype(str)
         #     data
             barcode=nm[0][0]+datetime.now(tz).strftime('%d%m%H%M%S')
