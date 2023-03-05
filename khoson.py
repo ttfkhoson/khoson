@@ -62,7 +62,7 @@ def push(df,gc,sheet):
     sheet=gc.open("Kho sơn - DS đặt hàng").worksheet(sheet)
     data=gd.get_as_dataframe(sheet)
     new_df=data.append(df)
-    # new_df['Tên vật tư']=new_df['Tên vật tư'].dropna()
+    new_df['Tên vật tư']=new_df['Tên vật tư'].dropna()
     gd.set_with_dataframe(sheet,new_df)
     st.success('xong')
 
