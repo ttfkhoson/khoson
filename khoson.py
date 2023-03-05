@@ -63,8 +63,8 @@ def push(df,gc,sheet):
     data=gd.get_as_dataframe(sheet)
     new_df=data.append(df)
     newdf=new_df[new_df['Khối lượng sơn'].notnull()]
-    new_data=newdf[newdf['Số lượng'
-    gd.set_with_dataframe(sheet,newdf)
+    new_data=newdf[newdf['Số lượng']]
+    gd.set_with_dataframe(sheet,new_data)
     st.success('xong')
 
 
